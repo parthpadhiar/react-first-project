@@ -19,8 +19,10 @@ import {
 import { NavLink } from "react-router-dom";
 
 class Header extends Component {
+  
   constructor(props) {
     super(props);
+  
     this.state = {
       isNavOpen: false,
       isModalOpen: false,
@@ -29,6 +31,7 @@ class Header extends Component {
     this.toggleModal = this.toggleModal.bind(this);
     this.handleLogin = this.handleLogin.bind(this);
   }
+  
   toggleNav() {
     this.setState({
       isNavOpen: !this.state.isNavOpen,
